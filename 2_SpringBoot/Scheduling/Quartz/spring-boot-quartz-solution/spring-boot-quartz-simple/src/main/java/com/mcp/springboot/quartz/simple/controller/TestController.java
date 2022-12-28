@@ -1,0 +1,32 @@
+package com.mcp.springboot.quartz.simple.controller;
+
+import com.mcp.infrastructure.common.domain.api.ResponseResult;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @author: KG
+ * @description:
+ * @date: Created in 下午5:12 2022/4/7
+ * @modified by:
+ */
+@Slf4j
+@Api(tags = "测试[Hello]")
+@RestController
+@RequestMapping("/test")
+@ResponseResult
+public class TestController {
+    @ApiOperation(value = "Test Boolean Response")
+    @ResponseBody
+    @PostMapping(value = "/bool")
+    public Boolean testBool() {
+        log.info("Test Boolean Response...");
+
+        return true;
+    }
+}
