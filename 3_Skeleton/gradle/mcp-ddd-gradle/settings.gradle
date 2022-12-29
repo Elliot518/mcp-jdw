@@ -1,0 +1,6 @@
+rootProject.name = 'mcp-ddd-gradle'
+include 'mcp-infrastructure'
+include 'mcp-domain'
+include 'mcp-application'
+include 'mcp-api'
+

@@ -1,0 +1,4 @@
+include ':microservices:mcp-domain'
+include ':microservices:mcp-api'
+include ':microservices:mcp-application'
+include ':microservices:mcp-infrastructure'
