@@ -3,6 +3,7 @@ package com.mcp.lab.java.core.excel.easy;
 import com.alibaba.excel.EasyExcel;
 import com.mcp.lab.java.core.excel.model.UserData;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.List;
  * @date: Created in 22:23 2023/2/16
  * @modified by:
  */
-public class EasyExcelWriteDemo {
+public class ExcelConverterWriteDemo {
 
     public static void main(String[] args) {
         // 实现excel写操作
@@ -36,14 +37,16 @@ public class EasyExcelWriteDemo {
         userData1.setUsername("张三");
         userData1.setAge(22);
         userData1.setBirthday(formatDate("2000-10-11"));
-        userData1.setRemark("Remark1");
+        userData1.setSex(1);
+        userData1.setWeight(new BigDecimal(69.832));
         list.add(userData1);
 
         UserData userData2 = new UserData();
         userData2.setUsername("李四");
         userData2.setAge(23);
         userData2.setBirthday(formatDate("1999-5-3"));
-        userData2.setRemark("Remark2");
+        userData2.setSex(0);
+        userData2.setWeight(new BigDecimal(70.568));
         list.add(userData2);
 
         return list;

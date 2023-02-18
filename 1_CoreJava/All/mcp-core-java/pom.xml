@@ -22,8 +22,7 @@
         <module>Security/crypt-algorithms</module>
         <module>Fundamental/nio-demo</module>
         <module>Fundamental/lambda-demo</module>
-        <module>OpenSource/third-party-demo1</module>
-        <module>opensource-lib-demo</module>
+        <module>Fundamental/excel-demo</module>
     </modules>
 
     <dependencies>
